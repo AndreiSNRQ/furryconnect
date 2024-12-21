@@ -348,7 +348,7 @@ $connections->close();
                         <!-- Pet Age -->
                         <div class="mb-3">
                             <label for="page" class="form-label">Pet Age</label>
-                            <input type="number" name="page" id="page" class="form-control" placeholder="Enter Pet Age" required>
+                            <input type="number" name="page" id="page" min="0" max="10" class="form-control" placeholder="Enter Pet Age" required>
                         </div>
                         <!-- Pet Gender -->
                         <div class="mb-3">
@@ -367,7 +367,7 @@ $connections->close();
                         <!-- Pet Birthdate -->
                         <div class="mb-3">
                             <label for="pbirth" class="form-label">Pet Birthdate</label>
-                            <input type="date" name="pbirth" id="pbirth" class="form-control" required>
+                            <input type="date" name="pbirth" id="pbirth" min="<?php echo date('Y-m-d'); ?>" class="form-control" required>
                         </div>
                         <!-- Pet Description -->
                         <div class="mb-3">

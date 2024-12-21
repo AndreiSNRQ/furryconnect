@@ -27,11 +27,8 @@ body{
     grid-template-rows: 10% 80% 10%;
 }
 .error{
-    position: relative;
-    right: 20%;
     color: #ff0400;
-    width: 87%;
-    border-radius: 5px;
+
 }
 nav{
     display: flex;
@@ -217,7 +214,7 @@ footer{
     margin-top: 25px;
 }
 #email ,#password {
-   height: 35px;
+    height: 35px;
     background: transparent;
     padding: 12px 13px;
     box-sizing: border-box;

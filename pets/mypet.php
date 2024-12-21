@@ -47,7 +47,7 @@ include 'mypfetch.php'; // Fetch the list of pets
                                     <input type="text" name="pbreed" class="form-control" placeholder="Pet Breed" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="number" name="page" class="form-control" placeholder="Pet Age" required>
+                                    <input type="number" name="page" min="0" max="10" class="form-control" placeholder="Pet Age" required>
                                 </div>
                                 <div class="mb-3">
                                     <select name="pgender" class="form-select" required>
@@ -60,7 +60,7 @@ include 'mypfetch.php'; // Fetch the list of pets
                                     <input type="file" name="pimage" class="form-control" placeholder="Pet Image" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="date" name="pbirth" class="form-control" placeholder="Pet Birthday" required>
+                                    <input type="date" name="pbirth" max="<?php echo date('Y-m-d'); ?>" class="form-control" placeholder="Pet Birthday" required>
                                 </div>
                                 <div class="mb-3">
                                     <textarea name="pdesc" class="form-control" placeholder="Pet Description" required></textarea>
@@ -136,7 +136,7 @@ include 'mypfetch.php'; // Fetch the list of pets
                                                 <input type="text" name="pbreed" class="form-control" value="<?php echo $pet['pbreed']; ?>" required>
                                             </div>
                                             <div class="mb-3">
-                                                <input type="number" name="page" class="form-control" value="<?php echo $pet['page']; ?>" required>
+                                                <input type="number" name="page" class="form-control" min="0" max="10" value="<?php echo $pet['page']; ?>" required>
                                             </div>
                                             <div class="mb-3">
                                                 <select name="pgender" class="form-select" required>
@@ -145,7 +145,7 @@ include 'mypfetch.php'; // Fetch the list of pets
                                                 </select>
                                             </div>
                                             <div class="mb-3">
-                                                <input type="date" name="pbirth" class="form-control border-1 border-black" value="<?php echo $pet['pbirth']; ?>" required>
+                                                <input type="date" name="pbirth" class="form-control border-1 border-black" min="<?php echo date('Y-m-d'); ?>" value="<?php echo $pet['pbirth']; ?>" required>
                                             </div>
                                             <div class="mb-3">
                                                 <textarea name="pdesc" class="form-control" required><?php echo $pet['pdesc']; ?></textarea>

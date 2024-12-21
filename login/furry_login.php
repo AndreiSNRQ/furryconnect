@@ -107,10 +107,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <section class="sub-login">
                 <form id="loginForm" class="user-info" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <input type="email" placeholder="Email" id="email" name="email" required value="<?php echo $email; ?>">
-                    <span class="error text-danger"><?php echo $emailErr; ?></span>
+                    <span class="error text-danger" style="top:-10px; left: 75%; transform: translateX(-50%);"><?php echo $emailErr; ?></span>
 
                     <input type="password" placeholder="Password" id="password" name="password" required>
-                    <span class="error text-danger text-center"><?php echo $passwordErr; ?></span>
+                    <span class="error text-danger text-center" style="top:-10px; left: 75%; transform: translateX(-50%);"><?php echo $passwordErr; ?></span>
                     <img id="eye" src="../Icons/eye-slash.svg" alt="Show Password" id="eyeIcon">
 
                     <div class="remember-forgot">
