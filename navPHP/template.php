@@ -2,7 +2,7 @@
 
 if (isset($_POST['logout'])) {
     session_destroy();
-    header("Location: ../login/furry_login");
+    header("Location: ../index.php");
     exit();
 }
 ?>
