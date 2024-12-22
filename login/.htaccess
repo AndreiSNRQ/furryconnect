@@ -1,5 +1,9 @@
+DirectoryIndex index.php index.html
+
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME}\.php -f
+# Check if the PHP file exists
+RewriteCond %{REQUEST_FILENAME}.php -f
 
+# Rewrite the URL to include the .php extension
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
